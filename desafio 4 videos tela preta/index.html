@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 videos tela preta</title>
+    <style>
+        /* Corpo da página com fundo preto */
+        body {
+            background-color: black;
+            margin: 0; /* Remove a margem padrão */
+            padding: 0; /* Remove o padding */
+            display: flex; /* Usando flexbox para centralizar os itens */
+            justify-content: center; /* Centraliza o conteúdo horizontalmente */
+            align-items: center; /* Centraliza o conteúdo verticalmente */
+            height: 100vh; /* 100% da altura da tela */
+            flex-direction: column; /* Coloca os vídeos empilhados verticalmente */
+        }
+
+        h1 {
+            background-color: black; /* Fundo do título igual ao fundo da página */
+            color: white; /* Cor do texto */
+            padding: 10px;
+            text-align: center;
+            width: 100%; /* Garantir que ocupe toda a largura disponível */
+        }
+
+        .video-container {
+            display: grid; /* Usando grid para organizar os vídeos */
+            grid-template-columns: repeat(2, 560px); /* Duas colunas, cada uma com 560px de largura */
+            gap: 20px; /* Espaçamento entre os vídeos */
+            margin-top: 20px;
+        }
+
+        iframe {
+            width: 560px; /* Largura fixa dos vídeos */
+            height: 315px; /* Altura fixa dos vídeos */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>4 vídeos tela cheia</h1>
+
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/KwFrvsnxPW0?si=DJWjF2_ABvHGpg3z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe src="https://www.youtube.com/embed/MqT1c68Fq60?si=pRrCVasVf3jhpR5w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe src="https://www.youtube.com/embed/S9uPNppGsGo?si=ZhanbTPwrVw_JZSz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <iframe src="https://www.youtube.com/embed/31llNGKWDdo?si=f77VJs3fx78tsWmb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>

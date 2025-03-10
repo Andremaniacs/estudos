@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em HTML</title>
+</head>
+<body>
+    <H1>IMAGEM DINAMICA</H1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagem/P.png"type="image/png">
+        
+        <source media="(max-width: 1050px)" srcset="imagem/m.png"type="image/png">
+                
+        <img src="imagem/G.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>reproduzindo sons </h1>
+    <p>vamos aprender a reproduzir audios em html</p>
+    <audio src="01 Sigo Na Sombra.mp3"controls></audio> """modo1"""
+    <source src="01 Sigo Na Sombra.mp3" type="audio/mp3">
+    <a href="01 Sigo Na Sombra.mp3">clique aqui para baixar o arquivo mp3</a>
+
+
+    <H1>inserindo videos </H1>
+    <p>video particular para avaliaçao</p>
+
+    <video src="VID-20201024-WA0089.mp4" width="500" controls ></video>  <!–- modelo 1 -->
+    
+
+    ou 
+    <!–- modelo 2 -->
+    <video width ="500" posters ="" controls autoplay loop ></video>
+    <source src="VID-20201031-WA0013 (video-converter.com).avi">
+    <source src="VID-20201031-WA0013.mp4">
+    <source src="VID-20201024-WA0089.mp4" type="">
+
+
+    <h1>inserindo videos do you tube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1BZ5s6BcvKg?si=kHaHRnVq-vKxVu_x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
